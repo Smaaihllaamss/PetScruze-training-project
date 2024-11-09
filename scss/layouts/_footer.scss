@@ -1,0 +1,252 @@
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background-color: var(--bg-shade);
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 80px;
+    background-color: transparent;
+    background-image: url("../images/bg-footer.png");
+    background-image: -webkit-image-set(
+      url("../images/bg-footer@2x.webp") 2x,
+      url("../images/bg-footer.webp") 1x,
+      url("../images/bg-footer@2x.png") 2x,
+      url("../images/bg-footer.png") 1x
+    );
+    background-image: image-set(
+      url("../images/bg-footer@2x.webp") type("image/webp") 2x,
+      url("../images/bg-footer.webp") type("image/webp") 1x,
+      url("../images/bg-footer@2x.png") type("image/png") 2x,
+      url("../images/bg-footer.png") type("image/png") 1x
+    );
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 185px;
+    padding-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 0;
+    padding-bottom: 1.66em;
+    border-bottom: 1px solid var(--element2);
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 2.5em;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-right: 1.31em;
+      padding-bottom: 3.75em;
+    }
+
+    &::before {
+      content: "";
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 94px;
+        height: 97px;
+        background-image: url("../images/bg-element.png");
+        background-image: -webkit-image-set(
+          url("../images/bg-element@2x.webp") 2x,
+          url("../images/bg-element.webp") 1x,
+          url("../images/bg-element@2x.png") 2x,
+          url("../images/bg-element.png") 1x
+        );
+        background-image: image-set(
+          url("../images/bg-element@2x.webp") type("image/webp") 2x,
+          url("../images/bg-element.webp") type("image/webp") 1x,
+          url("../images/bg-element@2x.png") type("image/png") 2x,
+          url("../images/bg-element.png") type("image/png") 1x
+        );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: calc(-97px * 0.61);
+        left: calc(-94px * 0.72);
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        width: 187px;
+        height: 193px;
+        top: calc(-193px * 0.61);
+        left: calc(-187px * 0.72);
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 45px;
+      height: 83px;
+      background-image: url("../images/bg-element-right.png");
+      background-image: -webkit-image-set(
+        url("../images/bg-element-right@2x.webp") 2x,
+        url("../images/bg-element-right.webp") 1x,
+        url("../images/bg-element-right@2x.png") 2x,
+        url("../images/bg-element-right.png") 1x
+      );
+      background-image: image-set(
+        url("../images/bg-element-right@2x.webp") type("image/webp") 2x,
+        url("../images/bg-element-right.webp") type("image/webp") 1x,
+        url("../images/bg-element-right@2x.png") type("image/png") 2x,
+        url("../images/bg-element-right.png") type("image/png") 1x
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: -74px;
+      right: calc(-45px / 2);
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 60px;
+        height: 110px;
+        bottom: -78px;
+        right: calc(-60px / 2);
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        width: 120px;
+        height: 220px;
+        bottom: -120px;
+        right: calc(-120px / 2);
+      }
+    }
+  }
+
+  &__address {
+    max-width: 100%;
+    font-weight: 400;
+    color: var(--accentuate);
+    text-align: center;
+    order: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 30%;
+      text-align: left;
+      order: 1;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    gap: 0.94em;
+    justify-content: center;
+    line-height: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: left;
+    }
+  }
+
+  &__list-item + &__list-item {
+    margin-top: 1.25em;
+  }
+
+  &__subtitle {
+    margin-bottom: 0.21em;
+  }
+
+  &__add-icon-container {
+    width: 2.63em;
+    height: 2.63em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--accent);
+    border-radius: 50%;
+  }
+
+  &__address-icon {
+    width: 1.125em;
+    height: 1.125em;
+  }
+
+  &__address-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__center {
+    max-width: 100%;
+    order: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 40%;
+      order: 2;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 260px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 47px;
+      height: 50px;
+      background-image: url("../images/bg-element.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 26px;
+      left: calc(-47px * 1.5);
+
+      @media screen and (min-width: $bp-mobile) {
+        left: calc(-47px * 2);
+      }
+
+      @media screen and (min-width: $bp-tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__hours-list {
+    max-width: 100%;
+    justify-content: flex-end;
+    order: 3;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 30%;
+      text-align: left;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.form-terms {
+  display: flex;
+  gap: 0.5em;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 500;
+
+  &__text {
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,21 @@
+.icon {
+  &__primary {
+    fill: var(--thirdly);
+  }
+
+  &__primary-stroke {
+    fill: transparent;
+    stroke: var(--thirdly);
+  }
+
+  &__accent {
+    fill: var(--accent);
+  }
+
+  &__round-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}

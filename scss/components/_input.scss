@@ -1,0 +1,42 @@
+.input {
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    width: 100%;
+    padding: 0.75em 1.56em;
+    color: var(--secondary);
+    background-color: var(--accent-shade2);
+    border: 2px solid transparent;
+    border-radius: 2.5em;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    &:focus {
+      border-color: var(--accent-shade2);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 150px;
+  }
+}
+
+input[type="checkbox"] {
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}

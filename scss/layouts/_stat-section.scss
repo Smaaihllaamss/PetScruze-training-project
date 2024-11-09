@@ -1,0 +1,244 @@
+.stat-section {
+  padding: 40px 0 40px;
+  background-color: var(--bg-shade);
+  position: relative;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 90px 0 60px;
+    background-color: transparent;
+    background-image: url(../images/bg-stat-section.png);
+    background-image: -webkit-image-set(
+      url(../images/bg-stat-section@2x.webp) 2x,
+      url(../images/bg-stat-section.webp) 1x,
+      url(../images/bg-stat-section@2x.png) 2x,
+      url(../images/bg-stat-section.png) 1x
+    );
+    background-image: image-set(
+      url(../images/bg-stat-section@2x.webp) type("image/webp") 2x,
+      url(../images/bg-stat-section.webp) type("image/webp") 1x,
+      url(../images/bg-stat-section@2x.png) type("image/png") 2x,
+      url(../images/bg-stat-section.png) type("image/png") 1x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 184px 0 120px;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 55px;
+    background-image: url(../images/bg-element-right.png);
+    background-image: -webkit-image-set(
+      url(../images/bg-element-right@2x.webp) 2x,
+      url(../images/bg-element-right.webp) 1x,
+      url(../images/bg-element-right@2x.png) 2x,
+      url(../images/bg-element-right.png) 1x
+    );
+    background-image: image-set(
+      url(../images/bg-element-right@2x.webp) type("image/webp") 2x,
+      url(../images/bg-element-right.webp) type("image/webp") 1x,
+      url(../images/bg-element-right@2x.png) type("image/png") 2x,
+      url(../images/bg-element-right.png) type("image/png") 1x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 45px;
+      height: 83px;
+      bottom: -18px;
+      left: 22px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 60px;
+      height: 110px;
+      bottom: -24px;
+      left: 30px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 120px;
+      height: 220px;
+      bottom: -48px;
+      left: 60px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    @media screen and (min-width: 410px) {
+      width: 71px;
+      height: 130px;
+      background-image: url(../images/bg-element-right.png);
+      background-image: -webkit-image-set(
+        url(../images/bg-element-right@2x.webp) 2x,
+        url(../images/bg-element-right.webp) 1x,
+        url(../images/bg-element-right@2x.png) 2x,
+        url(../images/bg-element-right.png) 1x
+      );
+      background-image: image-set(
+        url(../images/bg-element-right@2x.webp) type("image/webp") 2x,
+        url(../images/bg-element-right.webp) type("image/webp") 1x,
+        url(../images/bg-element-right@2x.png) type("image/png") 2x,
+        url(../images/bg-element-right.png) type("image/png") 1x
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 107px;
+      height: 195px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      display: block;
+      width: 142px;
+      height: 260px;
+    }
+
+    @media screen and (min-width: 1700px) {
+      display: block;
+      width: 284px;
+      height: 520px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 290px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: list-item;
+      flex-basis: calc((100% - 15px * 3) / 4);
+      max-width: 150px;
+      border-radius: 80px;
+      padding: 40px 10px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 200px;
+      border-radius: 157em;
+      padding: 60px 20px;
+    }
+  }
+
+  &__icon-container {
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 15px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--1 {
+      background-color: var(--element3);
+      box-shadow: 0px 0px 30px 0px var(--element3-shade);
+    }
+
+    &--2 {
+      background-color: var(--accent);
+      box-shadow: 0px 0px 30px 0px var(--accent-shade1);
+    }
+
+    &--3 {
+      background-color: var(--element4);
+      box-shadow: 0px 0px 30px 0px var(--element4-shade);
+    }
+
+    &--4 {
+      background-color: var(--element5);
+      box-shadow: 0px 0px 30px 0px var(--element5-shade);
+    }
+  }
+
+  &__icon {
+    width: 19px;
+    height: 17px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 28px;
+      height: 25px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 37px;
+      height: 34px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle-span {
+    text-transform: inherit;
+    font-family: inherit;
+    font-size: 0.75rem; /* 0.75rem * 16px = 12px */
+    font-weight: 500;
+    line-height: inherit;
+    color: inherit;
+    margin-left: 4px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      padding-top: 5px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 1rem; /* 16px */
+    }
+  }
+}

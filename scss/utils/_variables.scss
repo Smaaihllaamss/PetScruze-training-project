@@ -1,0 +1,37 @@
+:root {
+  font-size: 16px;
+
+  //   Font-family:
+  --font-family-text: Poppins, sans-serif;
+  --font-family-title: Recoleta, serif;
+
+  //   Colors:
+  --primary: #6f6f6f;
+  --secondary: #282828; /* rgba(40, 40, 40, 1) */
+  --secondary-shade: rgba(40, 40, 40, 0.03); /* rgba(40, 40, 40, 1) */
+  --thirdly: #fff;
+  --accent: #ff5b2e; /* rgba(255, 91, 46, 1) */
+  --accent-shade1: rgba(255, 91, 46, 0.3); /* shadows */
+  --accent-shade3: rgba(255, 91, 46, 0.5); /* shadows */
+  --accent-shade2: rgba(255, 91, 46, 0.05); /* form-fields */
+  --accentuate: #000000;
+  --element1: #ececec;
+  --element2: #efefef;
+  --element3: #5cd5e3; /* rgba(92, 213, 227, 1) */
+  --element3-shade: rgba(92, 213, 227, 0.3);
+  --element4: #fabf3e; /* rgba(250, 191, 62, 1) */
+  --element4-shade: rgba(250, 191, 62, 0.3);
+  --element5: #90c9fc; /* rgba(144, 201, 252, 1) */
+  --element5-shade: rgba(144, 201, 252, 0.3);
+  --element6: #d9d9d9;
+
+  --bg-color: #fffaf5;
+  --bg-shade: #fff4e9; /* links-bg */
+  --bg-element: rgba(232, 222, 217, 0.2); /* #E8DED9 20% */
+}
+
+// Breakpoints:
+$bp-mobile: 481px;
+$bp-tablet: 769px;
+$bp-laptop: 960px;
+$bp-desktop: 1410px;

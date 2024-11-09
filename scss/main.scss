@@ -1,0 +1,31 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base";
+@import "./utils/texts";
+@import "./utils/utils";
+
+@import "./layouts/section";
+@import "./layouts/container";
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/form-terms";
+@import "./components/icons";
+@import "./components/input";
+@import "./components/price-card";
+@import "./components/dialog-open";
+@import "./components/select";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/hero-section";
+@import "./layouts/help-section";
+@import "./layouts/services-section";
+@import "./layouts/stat-section";
+@import "./layouts/care-section";
+@import "./layouts/appointment-section";
+@import "./layouts/feedback-section";
+@import "./layouts/swiper-feedback";
+@import "./layouts/price-section";
+@import "./layouts/modal";
+@import "./layouts/modal-get-package";

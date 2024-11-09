@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  z-index: 1000;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em;
+    border-bottom: 1px solid var(--element1);
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 1.56em 0 1.56em;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 13px;
+    margin-top: 0.7em; /* 0.5em = 8px */
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 105px;
+      height: 23px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 140px;
+      height: 31px;
+    }
+  }
+}
+
+.header-main {
+  background-color: transparent;
+  transition: background-color color 0.3s ease-in-out;
+}
+
+.header-main.scrolled {
+  background-color: var(--bg-color);
+}
