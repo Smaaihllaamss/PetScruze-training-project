@@ -40,12 +40,3 @@
     }
   }
 }
-
-.header-main {
-  background-color: transparent;
-  transition: background-color color 0.3s ease-in-out;
-}
-
-.header-main.scrolled {
-  background-color: var(--bg-color);
-}
