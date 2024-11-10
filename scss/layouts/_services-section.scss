@@ -80,18 +80,18 @@
       display: block;
       flex-basis: 32%;
       height: auto;
-      background-image: url(../images/services-1.png);
+      background-image: url("../images/services-1.png");
       background-image: -webkit-image-set(
-        url(../images/services-1@2x.webp) 2x,
-        url(../images/services-1.webp) 1x,
-        url(../images/services-1@2x.png) 2x,
-        url(../images/services-1.png) 1x
+        url("../images/services-1@2x.webp") 2x,
+        url("../images/services-1.webp") 1x,
+        url("../images/services-1@2x.png") 2x,
+        url("../images/services-1.png") 1x
       );
       background-image: image-set(
-        url(../images/services-1@2x.webp) type("image/webp") 2x,
-        url(../images/services-1.webp) type("image/webp") 1x,
-        url(../images/services-1@2x.png) type("image/png") 2x,
-        url(../images/services-1.png) type("image/png") 1x
+        url("../images/services-1@2x.webp") type("image/webp") 2x,
+        url("../images/services-1.webp") type("image/webp") 1x,
+        url("../images/services-1@2x.png") type("image/png") 2x,
+        url("../images/services-1.png") type("image/png") 1x
       );
       background-repeat: no-repeat;
       background-position: center;

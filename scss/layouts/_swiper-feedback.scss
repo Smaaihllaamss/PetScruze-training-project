@@ -1,20 +1,18 @@
 .swiper-feedback {
   max-width: 480px;
   margin: 0 auto;
-  position: relative; //новый
+  position: relative;
 
   @media screen and (min-width: $bp-tablet) {
     max-width: 560px;
   }
 
   @media screen and (min-width: $bp-desktop) {
-    // max-width: 660px;
-    max-width: 740px; //новый
-    padding-top: 24px; //новый
-    transform: translateX(-3%); //новый
+    max-width: 740px;
+    padding-top: 24px;
+    transform: translateX(-3%);
   }
 
-  //новый
   &::before {
     content: "";
     display: none;
@@ -32,6 +30,18 @@
       transform: translateX(-70%);
       z-index: 10;
       background-image: url("../images/feedback-polygon-1.png");
+      background-image: -webkit-image-set(
+        url("../images/feedback-polygon-1@2x.webp") 2x,
+        url("../images/feedback-polygon-1.webp") 1x,
+        url("../images/feedback-polygon-1@2x.png") 2x,
+        url("../images/feedback-polygon-1.png") 1x
+      );
+      background-image: image-set(
+        url("../images/feedback-polygon-1@2x.webp") type("image/webp") 2x,
+        url("../images/feedback-polygon-1.webp") type("image/webp") 1x,
+        url("../images/feedback-polygon-1@2x.png") type("image/png") 2x,
+        url("../images/feedback-polygon-1.png") type("image/png") 1x
+      );
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
